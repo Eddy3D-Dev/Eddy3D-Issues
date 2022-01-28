@@ -1,0 +1,68 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  5.x                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+/*   Windows 32 and 64 bit porting by blueCAPE: http://www.bluecape.com.pt   *\
+|  Based on Windows porting (2.0.x v4) by Symscape: http://www.symscape.com   |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      binary;
+    class       volScalarField;
+    location    "0";
+    object      k;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 2 -2 0 0 0 0];
+
+internalField   uniform 0.015;
+
+boundaryField
+{
+    inlet
+    {
+        type            atmBoundaryLayerInletK;
+        z0              uniform 1;
+        flowDir         (-0.98480775 0.17364818 0);
+        zDir            (0 0 1);
+        kappa           0.41;
+        Cmu             0.09;
+        Uref            5;
+        Zref            10;
+        zGround         uniform 0;
+        value           uniform 2.4362735;
+    }
+    outlet
+    {
+        type            inletOutlet;
+        inletValue      uniform 0.015;
+        value           uniform 0.015;
+    }
+    ground
+    {
+        type            kqRWallFunction;
+        value           uniform 0.015;
+    }
+    frontAndBack
+    {
+        type            slip;
+    }
+    building
+    {
+        type            kqRWallFunction;
+        value           uniform 0.015;
+    }
+    ground_perim
+    {
+        type            kqRWallFunction;
+        value           uniform 0.015;
+    }
+}
+
+
+// ************************************************************************* //

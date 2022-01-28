@@ -1,0 +1,75 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  5.x                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+/*   Windows 32 and 64 bit porting by blueCAPE: http://www.bluecape.com.pt   *\
+|  Based on Windows porting (2.0.x v4) by Symscape: http://www.symscape.com   |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      binary;
+    class       volScalarField;
+    location    "0";
+    object      omega;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 -1 0 0 0 0];
+
+internalField   uniform 100;
+
+boundaryField
+{
+    inlet
+    {
+        type            fixedValue;
+        value           uniform 100;
+    }
+    outlet
+    {
+        type            inletOutlet;
+        inletValue      uniform 100;
+        value           uniform 100;
+    }
+    ground
+    {
+        Cmu             0.09;
+        kappa           0.4;
+        E               9.8;
+        beta1           0.075;
+        blended         false;
+        type            omegaWallFunction;
+        value           uniform 100;
+    }
+    frontAndBack
+    {
+        type            slip;
+    }
+    building
+    {
+        Cmu             0.09;
+        kappa           0.41;
+        E               9.8;
+        beta1           0.075;
+        blended         false;
+        type            omegaWallFunction;
+        value           uniform 100;
+    }
+    ground_perim
+    {
+        Cmu             0.09;
+        kappa           0.4;
+        E               9.8;
+        beta1           0.075;
+        blended         false;
+        type            omegaWallFunction;
+        value           uniform 100;
+    }
+}
+
+
+// ************************************************************************* //
