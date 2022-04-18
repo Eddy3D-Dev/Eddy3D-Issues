@@ -1,0 +1,1230 @@
+
+        /*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.2                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+        FoamFile
+{
+            version     2.0;
+            format ascii;
+    class volScalarField;
+    location    "0";
+    object omega;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions [0 0 -1 0 0 0 0];
+
+#include		"initialConditions";
+
+internalField uniform $turbulentOmega;
+
+boundaryField
+{
+    frontAndBack
+    {
+        type slip;
+    }
+
+    ground
+    {
+        type omegaWallFunction;
+        Cmu             0.09;
+        kappa           0.4;
+        E               9.8;
+        value           $internalField;
+    }
+ ground_perim
+    {
+        type omegaWallFunction;
+        Cmu             0.09;
+        kappa           0.4;
+        E               9.8;
+        value           $internalField;
+    }
+
+    building
+    {
+         type omegaWallFunction;
+value		$internalField;
+    }
+    
+patch0
+{  	type fixedValue;
+value	$internalField;
+}patch1
+{  	type fixedValue;
+value	$internalField;
+}patch2
+{  	type fixedValue;
+value	$internalField;
+}patch3
+{  	type fixedValue;
+value	$internalField;
+}patch4
+{  	type fixedValue;
+value	$internalField;
+}patch5
+{  	type fixedValue;
+value	$internalField;
+}patch6
+{  	type fixedValue;
+value	$internalField;
+}patch7
+{  	type fixedValue;
+value	$internalField;
+}patch8
+{  	type fixedValue;
+value	$internalField;
+}patch9
+{  	type fixedValue;
+value	$internalField;
+}patch10
+{  	type fixedValue;
+value	$internalField;
+}patch11
+{  	type fixedValue;
+value	$internalField;
+}patch12
+{  	type fixedValue;
+value	$internalField;
+}patch13
+{  	type fixedValue;
+value	$internalField;
+}patch14
+{  	type fixedValue;
+value	$internalField;
+}patch15
+{  	type fixedValue;
+value	$internalField;
+}patch16
+{  	type fixedValue;
+value	$internalField;
+}patch17
+{  	type fixedValue;
+value	$internalField;
+}patch18
+{  	type fixedValue;
+value	$internalField;
+}patch19
+{  	type fixedValue;
+value	$internalField;
+}patch20
+{  	type fixedValue;
+value	$internalField;
+}patch21
+{  	type fixedValue;
+value	$internalField;
+}patch22
+{  	type fixedValue;
+value	$internalField;
+}patch23
+{  	type fixedValue;
+value	$internalField;
+}patch24
+{  	type fixedValue;
+value	$internalField;
+}patch25
+{  	type fixedValue;
+value	$internalField;
+}patch26
+{  	type fixedValue;
+value	$internalField;
+}patch27
+{  	type fixedValue;
+value	$internalField;
+}patch28
+{  	type fixedValue;
+value	$internalField;
+}patch29
+{  	type fixedValue;
+value	$internalField;
+}patch30
+{  	type fixedValue;
+value	$internalField;
+}patch31
+{  	type fixedValue;
+value	$internalField;
+}patch32
+{  	type fixedValue;
+value	$internalField;
+}patch33
+{  	type fixedValue;
+value	$internalField;
+}patch34
+{  	type fixedValue;
+value	$internalField;
+}patch35
+{  	type fixedValue;
+value	$internalField;
+}patch36
+{  	type fixedValue;
+value	$internalField;
+}patch37
+{  	type fixedValue;
+value	$internalField;
+}patch38
+{  	type fixedValue;
+value	$internalField;
+}patch39
+{  	type fixedValue;
+value	$internalField;
+}patch40
+{  	type fixedValue;
+value	$internalField;
+}patch41
+{  	type fixedValue;
+value	$internalField;
+}patch42
+{  	type fixedValue;
+value	$internalField;
+}patch43
+{  	type fixedValue;
+value	$internalField;
+}patch44
+{  	type fixedValue;
+value	$internalField;
+}patch45
+{  	type fixedValue;
+value	$internalField;
+}patch46
+{  	type fixedValue;
+value	$internalField;
+}patch47
+{  	type fixedValue;
+value	$internalField;
+}patch48
+{  	type fixedValue;
+value	$internalField;
+}patch49
+{  	type fixedValue;
+value	$internalField;
+}patch50
+{  	type fixedValue;
+value	$internalField;
+}patch51
+{  	type fixedValue;
+value	$internalField;
+}patch52
+{  	type fixedValue;
+value	$internalField;
+}patch53
+{  	type fixedValue;
+value	$internalField;
+}patch54
+{  	type fixedValue;
+value	$internalField;
+}patch55
+{  	type fixedValue;
+value	$internalField;
+}patch56
+{  	type fixedValue;
+value	$internalField;
+}patch57
+{  	type fixedValue;
+value	$internalField;
+}patch58
+{  	type fixedValue;
+value	$internalField;
+}patch59
+{  	type fixedValue;
+value	$internalField;
+}patch60
+{  	type fixedValue;
+value	$internalField;
+}patch61
+{  	type fixedValue;
+value	$internalField;
+}patch62
+{  	type fixedValue;
+value	$internalField;
+}patch63
+{  	type fixedValue;
+value	$internalField;
+}patch64
+{  	type fixedValue;
+value	$internalField;
+}patch65
+{  	type fixedValue;
+value	$internalField;
+}patch66
+{  	type fixedValue;
+value	$internalField;
+}patch67
+{  	type fixedValue;
+value	$internalField;
+}patch68
+{  	type fixedValue;
+value	$internalField;
+}patch69
+{  	type fixedValue;
+value	$internalField;
+}patch70
+{  	type fixedValue;
+value	$internalField;
+}patch71
+{  	type fixedValue;
+value	$internalField;
+}patch72
+{  	type fixedValue;
+value	$internalField;
+}patch73
+{  	type fixedValue;
+value	$internalField;
+}patch74
+{  	type fixedValue;
+value	$internalField;
+}patch75
+{  	type fixedValue;
+value	$internalField;
+}patch76
+{  	type fixedValue;
+value	$internalField;
+}patch77
+{  	type fixedValue;
+value	$internalField;
+}patch78
+{  	type fixedValue;
+value	$internalField;
+}patch79
+{  	type fixedValue;
+value	$internalField;
+}patch80
+{  	type fixedValue;
+value	$internalField;
+}patch81
+{  	type fixedValue;
+value	$internalField;
+}patch82
+{  	type fixedValue;
+value	$internalField;
+}patch83
+{  	type fixedValue;
+value	$internalField;
+}patch84
+{  	type fixedValue;
+value	$internalField;
+}patch85
+{  	type fixedValue;
+value	$internalField;
+}patch86
+{  	type fixedValue;
+value	$internalField;
+}patch87
+{  	type fixedValue;
+value	$internalField;
+}patch88
+{  	type fixedValue;
+value	$internalField;
+}patch89
+{  	type fixedValue;
+value	$internalField;
+}patch90
+{  	type fixedValue;
+value	$internalField;
+}patch91
+{  	type fixedValue;
+value	$internalField;
+}patch92
+{  	type fixedValue;
+value	$internalField;
+}patch93
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch94
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch95
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch96
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch97
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch98
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch99
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch100
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch101
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch102
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch103
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch104
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch105
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch106
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch107
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch108
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch109
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch110
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch111
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch112
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch113
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch114
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch115
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch116
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch117
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch118
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch119
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch120
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch121
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch122
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch123
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch124
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch125
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch126
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch127
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch128
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch129
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch130
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch131
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch132
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch133
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch134
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch135
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch136
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch137
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch138
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch139
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch140
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch141
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch142
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch143
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch144
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch145
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch146
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch147
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch148
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch149
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch150
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch151
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch152
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch153
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch154
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch155
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch156
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch157
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch158
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch159
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch160
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch161
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch162
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch163
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch164
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch165
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch166
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch167
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch168
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch169
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch170
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch171
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch172
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch173
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch174
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch175
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch176
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch177
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch178
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch179
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch180
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch181
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch182
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch183
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch184
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch185
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch186
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch187
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch188
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch189
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch190
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch191
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch192
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch193
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch194
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch195
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch196
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch197
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch198
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch199
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch200
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch201
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch202
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch203
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch204
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch205
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch206
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch207
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch208
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch209
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch210
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch211
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch212
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch213
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch214
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch215
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch216
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch217
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch218
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch219
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch220
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch221
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch222
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch223
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch224
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch225
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch226
+
+    {
+           type inletOutlet;
+inletValue	$internalField;
+value		$internalField;
+    }patch227
+{  	type fixedValue;
+value	$internalField;
+}patch228
+{  	type fixedValue;
+value	$internalField;
+}patch229
+{  	type fixedValue;
+value	$internalField;
+}patch230
+{  	type fixedValue;
+value	$internalField;
+}patch231
+{  	type fixedValue;
+value	$internalField;
+}patch232
+{  	type fixedValue;
+value	$internalField;
+}patch233
+{  	type fixedValue;
+value	$internalField;
+}patch234
+{  	type fixedValue;
+value	$internalField;
+}patch235
+{  	type fixedValue;
+value	$internalField;
+}patch236
+{  	type fixedValue;
+value	$internalField;
+}patch237
+{  	type fixedValue;
+value	$internalField;
+}patch238
+{  	type fixedValue;
+value	$internalField;
+}patch239
+{  	type fixedValue;
+value	$internalField;
+}patch240
+{  	type fixedValue;
+value	$internalField;
+}patch241
+{  	type fixedValue;
+value	$internalField;
+}patch242
+{  	type fixedValue;
+value	$internalField;
+}patch243
+{  	type fixedValue;
+value	$internalField;
+}patch244
+{  	type fixedValue;
+value	$internalField;
+}patch245
+{  	type fixedValue;
+value	$internalField;
+}patch246
+{  	type fixedValue;
+value	$internalField;
+}patch247
+{  	type fixedValue;
+value	$internalField;
+}patch248
+{  	type fixedValue;
+value	$internalField;
+}patch249
+{  	type fixedValue;
+value	$internalField;
+}patch250
+{  	type fixedValue;
+value	$internalField;
+}patch251
+{  	type fixedValue;
+value	$internalField;
+}patch252
+{  	type fixedValue;
+value	$internalField;
+}patch253
+{  	type fixedValue;
+value	$internalField;
+}patch254
+{  	type fixedValue;
+value	$internalField;
+}patch255
+{  	type fixedValue;
+value	$internalField;
+}
+}
+
+// ************************************************************************* //
+

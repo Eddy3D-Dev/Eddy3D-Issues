@@ -1,0 +1,1482 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.2                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volVectorField;
+    location    "0";
+    object      U;
+    }
+
+    // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions [0 1 -1 0 0 0 0];
+
+#include "initialConditions";
+
+internalField uniform $flowVelocity;
+
+boundaryField
+{
+frontAndBack
+    {
+        type slip;
+}
+
+patch0
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch1
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch2
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch3
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch4
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch5
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch6
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch7
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch8
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch9
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch10
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch11
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch12
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch13
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch14
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch15
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch16
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch17
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch18
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch19
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch20
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch21
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch22
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch23
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch24
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch25
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch26
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch27
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch28
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch29
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch30
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch31
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch32
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch33
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch34
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch35
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch36
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch37
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch38
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch39
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch40
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch41
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch42
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch43
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch44
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch45
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch46
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch47
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch48
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch49
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch50
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch51
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch52
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch53
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch54
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch55
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch56
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch57
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch58
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch59
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch60
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch61
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch62
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch63
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch64
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch65
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch66
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch67
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch68
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch69
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch70
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch71
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch72
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch73
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch74
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch75
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch76
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch77
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch78
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch79
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch80
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch81
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch82
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch83
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch84
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch85
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch86
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch87
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch88
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch89
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch90
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch91
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch92
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch93
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch94
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch95
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch96
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch97
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch98
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch99
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch100
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch101
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch102
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch103
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch104
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch105
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch106
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch107
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch108
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch109
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch110
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch111
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch112
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch113
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch114
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch115
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch116
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch117
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch118
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch119
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch120
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch121
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch122
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch123
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch124
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch125
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch126
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch127
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch128
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch129
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch130
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch131
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch132
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch133
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch134
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch135
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch136
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch137
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch138
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch139
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch140
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch141
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch142
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch143
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch144
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch145
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch146
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch147
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch148
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch149
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch150
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch151
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch152
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch153
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch154
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch155
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch156
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch157
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch158
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch159
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch160
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch161
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch162
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch163
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch164
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch165
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch166
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch167
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch168
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch169
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch170
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch171
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch172
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch173
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch174
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch175
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch176
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch177
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch178
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch179
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch180
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch181
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch182
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch183
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch184
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch185
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch186
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch187
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch188
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch189
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch190
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch191
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch192
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch193
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch194
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch195
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch196
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch197
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch198
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch199
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch200
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch201
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch202
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch203
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch204
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch205
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch206
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch207
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch208
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch209
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch210
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch211
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch212
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch213
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch214
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch215
+
+    {
+        type inletOutlet;
+        value $internalField;
+        inletValue uniform (0 0 0);
+    }
+patch216
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch217
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch218
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch219
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch220
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch221
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch222
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch223
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch224
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch225
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch226
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch227
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch228
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch229
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch230
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch231
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch232
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch233
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch234
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch235
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch236
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch237
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch238
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch239
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch240
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch241
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch242
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch243
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch244
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch245
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch246
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch247
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch248
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch249
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch250
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch251
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch252
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch253
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch254
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+patch255
+{ type atmBoundaryLayerInletVelocity;
+        #include "ABLConditions";
+}
+
+ground
+    {
+        type fixedValue;
+        value uniform (0 0 0);
+    }
+
+ground_perim
+    {
+        type fixedValue;
+        value uniform (0 0 0);
+    }
+
+building
+    {
+        type fixedValue;
+        value uniform (0 0 0);
+    }
+}
+
+// ************************************************************************* //
+

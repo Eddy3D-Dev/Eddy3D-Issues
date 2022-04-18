@@ -1,0 +1,949 @@
+
+        /*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.2                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+        FoamFile
+{
+            version     2.0;
+            format ascii;
+    class volScalarField;
+    location    "0";
+    object aoa;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 1 0 0 0];
+
+internalField   uniform 0;
+
+boundaryField
+{
+   frontAndBack
+    {
+        type zeroGradient;
+    }
+    ground
+    {
+         type zeroGradient;
+    }
+ground_perim
+    {
+          type zeroGradient;
+    }
+building
+    {
+           type zeroGradient;
+    }
+    
+patch0
+{  	type fixedValue;
+value	uniform 0;
+}patch1
+{  	type fixedValue;
+value	uniform 0;
+}patch2
+{  	type fixedValue;
+value	uniform 0;
+}patch3
+{  	type fixedValue;
+value	uniform 0;
+}patch4
+{  	type fixedValue;
+value	uniform 0;
+}patch5
+{  	type fixedValue;
+value	uniform 0;
+}patch6
+{  	type fixedValue;
+value	uniform 0;
+}patch7
+{  	type fixedValue;
+value	uniform 0;
+}patch8
+{  	type fixedValue;
+value	uniform 0;
+}patch9
+{  	type fixedValue;
+value	uniform 0;
+}patch10
+{  	type fixedValue;
+value	uniform 0;
+}patch11
+{  	type fixedValue;
+value	uniform 0;
+}patch12
+{  	type fixedValue;
+value	uniform 0;
+}patch13
+{  	type fixedValue;
+value	uniform 0;
+}patch14
+{  	type fixedValue;
+value	uniform 0;
+}patch15
+{  	type fixedValue;
+value	uniform 0;
+}patch16
+{  	type fixedValue;
+value	uniform 0;
+}patch17
+{  	type fixedValue;
+value	uniform 0;
+}patch18
+{  	type fixedValue;
+value	uniform 0;
+}patch19
+{  	type fixedValue;
+value	uniform 0;
+}patch20
+{  	type fixedValue;
+value	uniform 0;
+}patch21
+{  	type fixedValue;
+value	uniform 0;
+}patch22
+{  	type fixedValue;
+value	uniform 0;
+}patch23
+{  	type fixedValue;
+value	uniform 0;
+}patch24
+{  	type fixedValue;
+value	uniform 0;
+}patch25
+{  	type fixedValue;
+value	uniform 0;
+}patch26
+{  	type fixedValue;
+value	uniform 0;
+}patch27
+{  	type fixedValue;
+value	uniform 0;
+}patch28
+{  	type fixedValue;
+value	uniform 0;
+}patch29
+{  	type fixedValue;
+value	uniform 0;
+}patch30
+{  	type fixedValue;
+value	uniform 0;
+}patch31
+{  	type fixedValue;
+value	uniform 0;
+}patch32
+{  	type fixedValue;
+value	uniform 0;
+}patch33
+{  	type fixedValue;
+value	uniform 0;
+}patch34
+{  	type fixedValue;
+value	uniform 0;
+}patch35
+{  	type fixedValue;
+value	uniform 0;
+}patch36
+{  	type fixedValue;
+value	uniform 0;
+}patch37
+{  	type fixedValue;
+value	uniform 0;
+}patch38
+{  	type fixedValue;
+value	uniform 0;
+}patch39
+{  	type fixedValue;
+value	uniform 0;
+}patch40
+{  	type fixedValue;
+value	uniform 0;
+}patch41
+{  	type fixedValue;
+value	uniform 0;
+}patch42
+{  	type fixedValue;
+value	uniform 0;
+}patch43
+{  	type fixedValue;
+value	uniform 0;
+}patch44
+{  	type fixedValue;
+value	uniform 0;
+}patch45
+{  	type fixedValue;
+value	uniform 0;
+}patch46
+{  	type fixedValue;
+value	uniform 0;
+}patch47
+{  	type fixedValue;
+value	uniform 0;
+}patch48
+{  	type fixedValue;
+value	uniform 0;
+}patch49
+{  	type fixedValue;
+value	uniform 0;
+}patch50
+{  	type fixedValue;
+value	uniform 0;
+}patch51
+{  	type fixedValue;
+value	uniform 0;
+}patch52
+{  	type fixedValue;
+value	uniform 0;
+}patch53
+{  	type fixedValue;
+value	uniform 0;
+}patch54
+{  	type fixedValue;
+value	uniform 0;
+}patch55
+{  	type fixedValue;
+value	uniform 0;
+}patch56
+{  	type fixedValue;
+value	uniform 0;
+}patch57
+{  	type fixedValue;
+value	uniform 0;
+}patch58
+{  	type fixedValue;
+value	uniform 0;
+}patch59
+{  	type fixedValue;
+value	uniform 0;
+}patch60
+{  	type fixedValue;
+value	uniform 0;
+}patch61
+{  	type fixedValue;
+value	uniform 0;
+}patch62
+{  	type fixedValue;
+value	uniform 0;
+}patch63
+{  	type fixedValue;
+value	uniform 0;
+}patch64
+{  	type fixedValue;
+value	uniform 0;
+}patch65
+{  	type fixedValue;
+value	uniform 0;
+}patch66
+{  	type fixedValue;
+value	uniform 0;
+}patch67
+{  	type fixedValue;
+value	uniform 0;
+}patch68
+{  	type fixedValue;
+value	uniform 0;
+}patch69
+{  	type fixedValue;
+value	uniform 0;
+}patch70
+{  	type fixedValue;
+value	uniform 0;
+}patch71
+{  	type fixedValue;
+value	uniform 0;
+}patch72
+{  	type fixedValue;
+value	uniform 0;
+}patch73
+{  	type fixedValue;
+value	uniform 0;
+}patch74
+{  	type fixedValue;
+value	uniform 0;
+}patch75
+{  	type fixedValue;
+value	uniform 0;
+}patch76
+{  	type fixedValue;
+value	uniform 0;
+}patch77
+{  	type fixedValue;
+value	uniform 0;
+}patch78
+{  	type fixedValue;
+value	uniform 0;
+}patch79
+{  	type fixedValue;
+value	uniform 0;
+}patch80
+{  	type fixedValue;
+value	uniform 0;
+}patch81
+{  	type fixedValue;
+value	uniform 0;
+}patch82
+{  	type fixedValue;
+value	uniform 0;
+}patch83
+{  	type fixedValue;
+value	uniform 0;
+}patch84
+{  	type fixedValue;
+value	uniform 0;
+}patch85
+{  	type fixedValue;
+value	uniform 0;
+}patch86
+{  	type fixedValue;
+value	uniform 0;
+}patch87
+{  	type fixedValue;
+value	uniform 0;
+}patch88
+{  	type fixedValue;
+value	uniform 0;
+}patch89
+{  	type fixedValue;
+value	uniform 0;
+}patch90
+{  	type fixedValue;
+value	uniform 0;
+}patch91
+{  	type fixedValue;
+value	uniform 0;
+}patch92
+{  	type fixedValue;
+value	uniform 0;
+}patch93
+
+    {
+          type zeroGradient;
+    }patch94
+
+    {
+          type zeroGradient;
+    }patch95
+
+    {
+          type zeroGradient;
+    }patch96
+
+    {
+          type zeroGradient;
+    }patch97
+
+    {
+          type zeroGradient;
+    }patch98
+
+    {
+          type zeroGradient;
+    }patch99
+
+    {
+          type zeroGradient;
+    }patch100
+
+    {
+          type zeroGradient;
+    }patch101
+
+    {
+          type zeroGradient;
+    }patch102
+
+    {
+          type zeroGradient;
+    }patch103
+
+    {
+          type zeroGradient;
+    }patch104
+
+    {
+          type zeroGradient;
+    }patch105
+
+    {
+          type zeroGradient;
+    }patch106
+
+    {
+          type zeroGradient;
+    }patch107
+
+    {
+          type zeroGradient;
+    }patch108
+
+    {
+          type zeroGradient;
+    }patch109
+
+    {
+          type zeroGradient;
+    }patch110
+
+    {
+          type zeroGradient;
+    }patch111
+
+    {
+          type zeroGradient;
+    }patch112
+
+    {
+          type zeroGradient;
+    }patch113
+
+    {
+          type zeroGradient;
+    }patch114
+
+    {
+          type zeroGradient;
+    }patch115
+
+    {
+          type zeroGradient;
+    }patch116
+
+    {
+          type zeroGradient;
+    }patch117
+
+    {
+          type zeroGradient;
+    }patch118
+
+    {
+          type zeroGradient;
+    }patch119
+
+    {
+          type zeroGradient;
+    }patch120
+
+    {
+          type zeroGradient;
+    }patch121
+
+    {
+          type zeroGradient;
+    }patch122
+
+    {
+          type zeroGradient;
+    }patch123
+
+    {
+          type zeroGradient;
+    }patch124
+
+    {
+          type zeroGradient;
+    }patch125
+
+    {
+          type zeroGradient;
+    }patch126
+
+    {
+          type zeroGradient;
+    }patch127
+
+    {
+          type zeroGradient;
+    }patch128
+
+    {
+          type zeroGradient;
+    }patch129
+
+    {
+          type zeroGradient;
+    }patch130
+
+    {
+          type zeroGradient;
+    }patch131
+
+    {
+          type zeroGradient;
+    }patch132
+
+    {
+          type zeroGradient;
+    }patch133
+
+    {
+          type zeroGradient;
+    }patch134
+
+    {
+          type zeroGradient;
+    }patch135
+
+    {
+          type zeroGradient;
+    }patch136
+
+    {
+          type zeroGradient;
+    }patch137
+
+    {
+          type zeroGradient;
+    }patch138
+
+    {
+          type zeroGradient;
+    }patch139
+
+    {
+          type zeroGradient;
+    }patch140
+
+    {
+          type zeroGradient;
+    }patch141
+
+    {
+          type zeroGradient;
+    }patch142
+
+    {
+          type zeroGradient;
+    }patch143
+
+    {
+          type zeroGradient;
+    }patch144
+
+    {
+          type zeroGradient;
+    }patch145
+
+    {
+          type zeroGradient;
+    }patch146
+
+    {
+          type zeroGradient;
+    }patch147
+
+    {
+          type zeroGradient;
+    }patch148
+
+    {
+          type zeroGradient;
+    }patch149
+
+    {
+          type zeroGradient;
+    }patch150
+
+    {
+          type zeroGradient;
+    }patch151
+
+    {
+          type zeroGradient;
+    }patch152
+
+    {
+          type zeroGradient;
+    }patch153
+
+    {
+          type zeroGradient;
+    }patch154
+
+    {
+          type zeroGradient;
+    }patch155
+
+    {
+          type zeroGradient;
+    }patch156
+
+    {
+          type zeroGradient;
+    }patch157
+
+    {
+          type zeroGradient;
+    }patch158
+
+    {
+          type zeroGradient;
+    }patch159
+
+    {
+          type zeroGradient;
+    }patch160
+
+    {
+          type zeroGradient;
+    }patch161
+
+    {
+          type zeroGradient;
+    }patch162
+
+    {
+          type zeroGradient;
+    }patch163
+
+    {
+          type zeroGradient;
+    }patch164
+
+    {
+          type zeroGradient;
+    }patch165
+
+    {
+          type zeroGradient;
+    }patch166
+
+    {
+          type zeroGradient;
+    }patch167
+
+    {
+          type zeroGradient;
+    }patch168
+
+    {
+          type zeroGradient;
+    }patch169
+
+    {
+          type zeroGradient;
+    }patch170
+
+    {
+          type zeroGradient;
+    }patch171
+
+    {
+          type zeroGradient;
+    }patch172
+
+    {
+          type zeroGradient;
+    }patch173
+
+    {
+          type zeroGradient;
+    }patch174
+
+    {
+          type zeroGradient;
+    }patch175
+
+    {
+          type zeroGradient;
+    }patch176
+
+    {
+          type zeroGradient;
+    }patch177
+
+    {
+          type zeroGradient;
+    }patch178
+
+    {
+          type zeroGradient;
+    }patch179
+
+    {
+          type zeroGradient;
+    }patch180
+
+    {
+          type zeroGradient;
+    }patch181
+
+    {
+          type zeroGradient;
+    }patch182
+
+    {
+          type zeroGradient;
+    }patch183
+
+    {
+          type zeroGradient;
+    }patch184
+
+    {
+          type zeroGradient;
+    }patch185
+
+    {
+          type zeroGradient;
+    }patch186
+
+    {
+          type zeroGradient;
+    }patch187
+
+    {
+          type zeroGradient;
+    }patch188
+
+    {
+          type zeroGradient;
+    }patch189
+
+    {
+          type zeroGradient;
+    }patch190
+
+    {
+          type zeroGradient;
+    }patch191
+
+    {
+          type zeroGradient;
+    }patch192
+
+    {
+          type zeroGradient;
+    }patch193
+
+    {
+          type zeroGradient;
+    }patch194
+
+    {
+          type zeroGradient;
+    }patch195
+
+    {
+          type zeroGradient;
+    }patch196
+
+    {
+          type zeroGradient;
+    }patch197
+
+    {
+          type zeroGradient;
+    }patch198
+
+    {
+          type zeroGradient;
+    }patch199
+
+    {
+          type zeroGradient;
+    }patch200
+
+    {
+          type zeroGradient;
+    }patch201
+
+    {
+          type zeroGradient;
+    }patch202
+
+    {
+          type zeroGradient;
+    }patch203
+
+    {
+          type zeroGradient;
+    }patch204
+
+    {
+          type zeroGradient;
+    }patch205
+
+    {
+          type zeroGradient;
+    }patch206
+
+    {
+          type zeroGradient;
+    }patch207
+
+    {
+          type zeroGradient;
+    }patch208
+
+    {
+          type zeroGradient;
+    }patch209
+
+    {
+          type zeroGradient;
+    }patch210
+
+    {
+          type zeroGradient;
+    }patch211
+
+    {
+          type zeroGradient;
+    }patch212
+
+    {
+          type zeroGradient;
+    }patch213
+
+    {
+          type zeroGradient;
+    }patch214
+
+    {
+          type zeroGradient;
+    }patch215
+
+    {
+          type zeroGradient;
+    }patch216
+
+    {
+          type zeroGradient;
+    }patch217
+
+    {
+          type zeroGradient;
+    }patch218
+
+    {
+          type zeroGradient;
+    }patch219
+
+    {
+          type zeroGradient;
+    }patch220
+
+    {
+          type zeroGradient;
+    }patch221
+
+    {
+          type zeroGradient;
+    }patch222
+
+    {
+          type zeroGradient;
+    }patch223
+
+    {
+          type zeroGradient;
+    }patch224
+
+    {
+          type zeroGradient;
+    }patch225
+
+    {
+          type zeroGradient;
+    }patch226
+
+    {
+          type zeroGradient;
+    }patch227
+{  	type fixedValue;
+value	uniform 0;
+}patch228
+{  	type fixedValue;
+value	uniform 0;
+}patch229
+{  	type fixedValue;
+value	uniform 0;
+}patch230
+{  	type fixedValue;
+value	uniform 0;
+}patch231
+{  	type fixedValue;
+value	uniform 0;
+}patch232
+{  	type fixedValue;
+value	uniform 0;
+}patch233
+{  	type fixedValue;
+value	uniform 0;
+}patch234
+{  	type fixedValue;
+value	uniform 0;
+}patch235
+{  	type fixedValue;
+value	uniform 0;
+}patch236
+{  	type fixedValue;
+value	uniform 0;
+}patch237
+{  	type fixedValue;
+value	uniform 0;
+}patch238
+{  	type fixedValue;
+value	uniform 0;
+}patch239
+{  	type fixedValue;
+value	uniform 0;
+}patch240
+{  	type fixedValue;
+value	uniform 0;
+}patch241
+{  	type fixedValue;
+value	uniform 0;
+}patch242
+{  	type fixedValue;
+value	uniform 0;
+}patch243
+{  	type fixedValue;
+value	uniform 0;
+}patch244
+{  	type fixedValue;
+value	uniform 0;
+}patch245
+{  	type fixedValue;
+value	uniform 0;
+}patch246
+{  	type fixedValue;
+value	uniform 0;
+}patch247
+{  	type fixedValue;
+value	uniform 0;
+}patch248
+{  	type fixedValue;
+value	uniform 0;
+}patch249
+{  	type fixedValue;
+value	uniform 0;
+}patch250
+{  	type fixedValue;
+value	uniform 0;
+}patch251
+{  	type fixedValue;
+value	uniform 0;
+}patch252
+{  	type fixedValue;
+value	uniform 0;
+}patch253
+{  	type fixedValue;
+value	uniform 0;
+}patch254
+{  	type fixedValue;
+value	uniform 0;
+}patch255
+{  	type fixedValue;
+value	uniform 0;
+}
+}
+
+// ************************************************************************* //
+
