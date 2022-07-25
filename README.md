@@ -8,4 +8,12 @@
 
 - Wind directions show inconsistent behavior: case `0` converges, case `20` crashes.
 
+## Related repositories
+
+https://github.com/kastnerp/Eddy3D-Helperfunctions  
+https://github.com/kastnerp/Eddy3D-Issues  
+https://github.com/kastnerp/Eddy3D-SimCompleted  
+https://github.com/kastnerp/Eddy3D-Residuals  
+https://github.com/kastnerp/Eddy3D-CaseStudies  
+
 
