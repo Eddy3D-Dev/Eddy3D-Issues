@@ -1,0 +1,530 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+/*   Windows 32 and 64 bit porting by blueCAPE: http://www.bluecape.com.pt   *\
+|  Based on Windows porting (2.0.x v4) by Symscape: http://www.symscape.com   |
+\*---------------------------------------------------------------------------*/
+Build  : 8-53cd1468e263
+Exec   : decomposePar -force
+Date   : Jul 27 2022
+Time   : 04:50:05
+Host   : "ESLBEAST"
+PID    : 10200
+I/O    : uncollated
+Case   : D:/CFDGAN/SprawlGAN/Case_64/0
+nProcs : 1
+SigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Removing 0 existing processor directories
+
+
+Decomposing mesh region0
+
+Create mesh
+
+Calculating distribution of cells
+Selecting decompositionMethod scotch
+
+Finished decomposition in 14.45 s
+
+Calculating original mesh data
+
+Distributing cells to processors
+
+Distributing faces to processors
+
+Distributing points to processors
+
+Constructing processor meshes
+
+Processor 0
+    Number of cells = 572985
+    Number of faces shared with processor 1 = 4149
+    Number of faces shared with processor 2 = 214
+    Number of faces shared with processor 4 = 604
+    Number of faces shared with processor 5 = 3990
+    Number of faces shared with processor 6 = 44
+    Number of faces shared with processor 7 = 2321
+    Number of faces shared with processor 12 = 2487
+    Number of processor patches = 7
+    Number of processor faces = 13809
+    Number of boundary faces = 101263
+
+Processor 1
+    Number of cells = 574870
+    Number of faces shared with processor 0 = 4149
+    Number of faces shared with processor 2 = 3553
+    Number of faces shared with processor 3 = 687
+    Number of faces shared with processor 4 = 1784
+    Number of faces shared with processor 12 = 1608
+    Number of faces shared with processor 13 = 1459
+    Number of processor patches = 6
+    Number of processor faces = 13240
+    Number of boundary faces = 102013
+
+Processor 2
+    Number of cells = 569214
+    Number of faces shared with processor 0 = 214
+    Number of faces shared with processor 1 = 3553
+    Number of faces shared with processor 3 = 2836
+    Number of faces shared with processor 4 = 94
+    Number of faces shared with processor 11 = 24
+    Number of faces shared with processor 12 = 116
+    Number of faces shared with processor 13 = 2657
+    Number of processor patches = 7
+    Number of processor faces = 9494
+    Number of boundary faces = 111175
+
+Processor 3
+    Number of cells = 567930
+    Number of faces shared with processor 1 = 687
+    Number of faces shared with processor 2 = 2836
+    Number of faces shared with processor 4 = 3817
+    Number of processor patches = 3
+    Number of processor faces = 7340
+    Number of boundary faces = 112511
+
+Processor 4
+    Number of cells = 568891
+    Number of faces shared with processor 0 = 604
+    Number of faces shared with processor 1 = 1784
+    Number of faces shared with processor 2 = 94
+    Number of faces shared with processor 3 = 3817
+    Number of faces shared with processor 5 = 3611
+    Number of faces shared with processor 6 = 2067
+    Number of processor patches = 6
+    Number of processor faces = 11977
+    Number of boundary faces = 109724
+
+Processor 5
+    Number of cells = 569229
+    Number of faces shared with processor 0 = 3990
+    Number of faces shared with processor 4 = 3611
+    Number of faces shared with processor 6 = 4204
+    Number of faces shared with processor 7 = 3145
+    Number of processor patches = 4
+    Number of processor faces = 14950
+    Number of boundary faces = 107309
+
+Processor 6
+    Number of cells = 570049
+    Number of faces shared with processor 0 = 44
+    Number of faces shared with processor 4 = 2067
+    Number of faces shared with processor 5 = 4204
+    Number of faces shared with processor 7 = 294
+    Number of processor patches = 4
+    Number of processor faces = 6609
+    Number of boundary faces = 113458
+
+Processor 7
+    Number of cells = 572216
+    Number of faces shared with processor 0 = 2321
+    Number of faces shared with processor 5 = 3145
+    Number of faces shared with processor 6 = 294
+    Number of faces shared with processor 8 = 3661
+    Number of faces shared with processor 12 = 1347
+    Number of processor patches = 5
+    Number of processor faces = 10768
+    Number of boundary faces = 111431
+
+Processor 8
+    Number of cells = 571019
+    Number of faces shared with processor 7 = 3661
+    Number of faces shared with processor 9 = 4086
+    Number of faces shared with processor 10 = 178
+    Number of faces shared with processor 12 = 2168
+    Number of processor patches = 4
+    Number of processor faces = 10093
+    Number of boundary faces = 111071
+
+Processor 9
+    Number of cells = 573957
+    Number of faces shared with processor 8 = 4086
+    Number of faces shared with processor 10 = 2955
+    Number of faces shared with processor 12 = 891
+    Number of processor patches = 3
+    Number of processor faces = 7932
+    Number of boundary faces = 113839
+
+Processor 10
+    Number of cells = 575161
+    Number of faces shared with processor 8 = 178
+    Number of faces shared with processor 9 = 2955
+    Number of faces shared with processor 11 = 4407
+    Number of faces shared with processor 12 = 2435
+    Number of faces shared with processor 13 = 490
+    Number of processor patches = 5
+    Number of processor faces = 10465
+    Number of boundary faces = 111832
+
+Processor 11
+    Number of cells = 577293
+    Number of faces shared with processor 2 = 24
+    Number of faces shared with processor 10 = 4407
+    Number of faces shared with processor 12 = 6
+    Number of faces shared with processor 13 = 3790
+    Number of processor patches = 4
+    Number of processor faces = 8227
+    Number of boundary faces = 114817
+
+Processor 12
+    Number of cells = 576782
+    Number of faces shared with processor 0 = 2487
+    Number of faces shared with processor 1 = 1608
+    Number of faces shared with processor 2 = 116
+    Number of faces shared with processor 7 = 1347
+    Number of faces shared with processor 8 = 2168
+    Number of faces shared with processor 9 = 891
+    Number of faces shared with processor 10 = 2435
+    Number of faces shared with processor 11 = 6
+    Number of faces shared with processor 13 = 2848
+    Number of processor patches = 9
+    Number of processor faces = 13906
+    Number of boundary faces = 106853
+
+Processor 13
+    Number of cells = 577639
+    Number of faces shared with processor 1 = 1459
+    Number of faces shared with processor 2 = 2657
+    Number of faces shared with processor 10 = 490
+    Number of faces shared with processor 11 = 3790
+    Number of faces shared with processor 12 = 2848
+    Number of processor patches = 5
+    Number of processor faces = 11244
+    Number of boundary faces = 111781
+
+Number of processor faces = 75027
+Max number of cells = 577639 (0.86951424% above average 572659.64)
+Max number of processor patches = 9 (75% above average 5.1428571)
+Max number of faces between processors = 14950 (39.483119% above average 10718.143)
+
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+Processor 4: field transfer
+Processor 5: field transfer
+Processor 6: field transfer
+Processor 7: field transfer
+Processor 8: field transfer
+Processor 9: field transfer
+Processor 10: field transfer
+Processor 11: field transfer
+Processor 12: field transfer
+Processor 13: field transfer
+
+End
+
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+/*   Windows 32 and 64 bit porting by blueCAPE: http://www.bluecape.com.pt   *\
+|  Based on Windows porting (2.0.x v4) by Symscape: http://www.symscape.com   |
+\*---------------------------------------------------------------------------*/
+Build  : 8-53cd1468e263
+Exec   : simpleFoam -parallel
+Date   : Jul 27 2022
+Time   : 04:50:36
+Host   : "ESLBEAST"
+PID    : 19116
+I/O    : uncollated
+Case   : D:/CFDGAN/SprawlGAN/Case_64/0
+nProcs : 14
+Slaves : 
+13
+(
+"ESLBEAST.18052"
+"ESLBEAST.1416"
+"ESLBEAST.19260"
+"ESLBEAST.1568"
+"ESLBEAST.7704"
+"ESLBEAST.5716"
+"ESLBEAST.19120"
+"ESLBEAST.5580"
+"ESLBEAST.10296"
+"ESLBEAST.12716"
+"ESLBEAST.18400"
+"ESLBEAST.14064"
+"ESLBEAST.11804"
+)
+
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+SigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+SIMPLE: Convergence criteria found
+        p: tolerance 1e-05
+        U: tolerance 0.0001
+
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model realizableKE
+RAS
+{
+    RASModel        realizableKE;
+    turbulence      on;
+    printCoeffs     on;
+    A0              4;
+    C2              1.9;
+    sigmak          1;
+    sigmaEps        1.2;
+}
+
+No MRF models present
+
+No finite volume options present
+
+Starting time loop
+
+
+
+fieldMinMax fieldMinMax write:
+    min(mag(U)) = 0 in cell 0 at location (160.60699 -227.81292 393.66697) on processor 0
+    max(mag(U)) = 12.465186 in cell 52759 at location (300.90317 732.322 393.66697) on processor 3
+    min(p) = 0 in cell 0 at location (160.60699 -227.81292 393.66697) on processor 0
+    max(p) = 0 in cell 0 at location (160.60699 -227.81292 393.66697) on processor 0
+    min(k) = 0.015 in cell 0 at location (160.60699 -227.81292 393.66697) on processor 0
+    max(k) = 2.4362735 in cell 383648 at location (610.93465 732.322 0.58184231) on processor 3
+    min(epsilon) = 0.0038615024 in cell 52759 at location (300.90317 732.322 393.66697) on processor 3
+    max(epsilon) = 0.9720428 in cell 568023 at location (-552.77403 732.322 0.56783987) on processor 6
+    min(nut) = 0 in cell 374341 at location (-30.009055 -131.68345 33.525578) on processor 0
+    max(nut) = 2.659202 in cell 455156 at location (-601.00082 732.322 70.612531) on processor 6
+
+volFieldValue average write:
+    weightedVolAverage() of U = (0 0 0)
+    weightedVolAverage() of p = 0
+
+Time = 1
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 1, Final residual = 0.02757275, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 1, Final residual = 5.4154642e-07, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 1, Final residual = 0.0040731996, No Iterations 1
+
+job aborted:
+[ranks] message
+
+[0-5] terminated
+
+[6] process exited without calling finalize
+
+[7-13] terminated
+
+---- error analysis -----
+
+[6] on ESLBEAST
+simpleFoam ended prematurely and may have crashed. exit code 3
+
+---- error analysis -----
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+/*   Windows 32 and 64 bit porting by blueCAPE: http://www.bluecape.com.pt   *\
+|  Based on Windows porting (2.0.x v4) by Symscape: http://www.symscape.com   |
+\*---------------------------------------------------------------------------*/
+Build  : 8-53cd1468e263
+Exec   : reconstructPar -latestTime
+Date   : Jul 27 2022
+Time   : 04:50:44
+Host   : "ESLBEAST"
+PID    : 7440
+I/O    : uncollated
+Case   : D:/CFDGAN/SprawlGAN/Case_64/0
+nProcs : 1
+SigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From function int main(int, char**)
+    in file reconstructPar.C at line 220
+    No times selected
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+/*   Windows 32 and 64 bit porting by blueCAPE: http://www.bluecape.com.pt   *\
+|  Based on Windows porting (2.0.x v4) by Symscape: http://www.symscape.com   |
+\*---------------------------------------------------------------------------*/
+Build  : 8-53cd1468e263
+Exec   : simpleFoam -parallel
+Date   : Aug 01 2022
+Time   : 17:28:24
+Host   : "ESLBEAST"
+PID    : 19288
+I/O    : uncollated
+Case   : D:/CFDGAN/SprawlGAN/Case_64/0
+nProcs : 14
+Slaves : 
+13
+(
+"ESLBEAST.4852"
+"ESLBEAST.12068"
+"ESLBEAST.9884"
+"ESLBEAST.912"
+"ESLBEAST.5552"
+"ESLBEAST.11536"
+"ESLBEAST.13300"
+"ESLBEAST.17100"
+"ESLBEAST.13036"
+"ESLBEAST.6324"
+"ESLBEAST.2524"
+"ESLBEAST.1868"
+"ESLBEAST.3700"
+)
+
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+SigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+SIMPLE: Convergence criteria found
+        p: tolerance 1e-05
+        U: tolerance 0.0001
+
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model realizableKE
+RAS
+{
+    RASModel        realizableKE;
+    turbulence      on;
+    printCoeffs     on;
+    A0              4;
+    C2              1.9;
+    sigmak          1;
+    sigmaEps        1.2;
+}
+
+No MRF models present
+
+No finite volume options present
+
+Starting time loop
+
+
+
+fieldMinMax fieldMinMax write:
+    min(mag(U)) = 0 in cell 0 at location (160.60699 -227.81292 393.66697) on processor 0
+    max(mag(U)) = 12.465186 in cell 52759 at location (300.90317 732.322 393.66697) on processor 3
+    min(p) = 0 in cell 0 at location (160.60699 -227.81292 393.66697) on processor 0
+    max(p) = 0 in cell 0 at location (160.60699 -227.81292 393.66697) on processor 0
+    min(k) = 0.015 in cell 0 at location (160.60699 -227.81292 393.66697) on processor 0
+    max(k) = 2.4362735 in cell 383648 at location (610.93465 732.322 0.58184231) on processor 3
+    min(epsilon) = 0.0038615024 in cell 52759 at location (300.90317 732.322 393.66697) on processor 3
+    max(epsilon) = 0.9720428 in cell 568023 at location (-552.77403 732.322 0.56783987) on processor 6
+    min(nut) = 0 in cell 374341 at location (-30.009055 -131.68345 33.525578) on processor 0
+    max(nut) = 2.659202 in cell 455156 at location (-601.00082 732.322 70.612531) on processor 6
+
+volFieldValue average write:
+    weightedVolAverage() of U = (0 0 0)
+    weightedVolAverage() of p = 0
+
+Time = 1
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 1, Final residual = 0.02757275, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 1, Final residual = 5.4154642e-07, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 1, Final residual = 0.0040731996, No Iterations 1
+
+job aborted:
+[ranks] message
+
+[0-5] terminated
+
+[6] process exited without calling finalize
+
+[7-13] terminated
+
+---- error analysis -----
+
+[6] on ESLBEAST
+simpleFoam ended prematurely and may have crashed. exit code 3
+
+---- error analysis -----
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+/*   Windows 32 and 64 bit porting by blueCAPE: http://www.bluecape.com.pt   *\
+|  Based on Windows porting (2.0.x v4) by Symscape: http://www.symscape.com   |
+\*---------------------------------------------------------------------------*/
+Build  : 8-53cd1468e263
+Exec   : reconstructPar -latestTime
+Date   : Aug 01 2022
+Time   : 17:28:43
+Host   : "ESLBEAST"
+PID    : 15904
+I/O    : uncollated
+Case   : D:/CFDGAN/SprawlGAN/Case_64/0
+nProcs : 1
+SigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From function int main(int, char**)
+    in file reconstructPar.C at line 220
+    No times selected
